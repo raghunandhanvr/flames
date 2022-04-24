@@ -1,4 +1,5 @@
 # How FLAMES and this Program Works
+![flames](https://user-images.githubusercontent.com/65498602/164966430-dae0c19b-de21-43e7-afdf-e7dfab5c6224.png)
 
 ## What is FlamesGame?
 FlamesGame is a relationship calculating algorithm famous between the youngsters. At the time of graduation everyone might heard about this and many of them tried out this secretly. Some took this as very serious also. So what FLAMES stance for?
