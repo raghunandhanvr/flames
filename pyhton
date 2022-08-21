@@ -1,0 +1,82 @@
+a = input("Enter your name: ")
+b = input("Enter your crush name: ")
+c = list()
+d = list()
+for i in a:
+    if i != " ":
+        c.append(i)
+for j in b:
+    if j != " ":
+        d.append(j)
+for x in c:
+    for y in d:
+        g = c.count(x)
+        if g >= 1:
+            e = c.count(x)
+            if x == y:
+                f = e - c.count(y)
+                while f >= 1:
+                    c.remove(x)
+                    d.remove(y)
+                    c.insert(0,"1")
+                    d.insert(0,"2")
+                    e -=1
+                while f < 0:
+                    c.remove(x)
+                    d.remove(y)
+                    c.insert(0,"1")
+                    d.insert(0,"2")
+                    e +=1
+                if f == 0:
+                    c.remove(x)
+                    d.remove(y)
+                    c.insert(0,"1")
+                    d.insert(0,"2")
+h = c.count('1')
+k = d.count('2')
+while h != 0:
+    c.remove('1')
+    h -= 1
+while k != 0:
+    d.remove('2')
+    k -= 1
+c.extend(d)
+print(c)
+m = ['f','l','a','m','e','s']
+l = len(m)
+n = len(c)
+while l > 1:
+    q = n%l
+    if q == 0:
+        o = l-1
+        m.pop(o)
+        l = len(m)
+        n = len(c)
+        print(m)
+    elif q == 1:
+        m.pop(0)
+        l = len(m)
+        n = len(c)
+        print(m)
+    elif q != 1:
+        p = n%l
+        p -= 1
+        m.pop(p)
+        n = len(c)
+        n = p+n
+        l = len(m)
+        print(m)
+a = a.title()
+b = b.title()        
+if "f" in m:
+    print(a,"and",b,"are friends ")
+elif "l" in m:
+    print(a,"and",b,"are lovers")
+elif "a" in m:
+    print("They are attracted to each other")
+elif "m" in m:
+    print(a,"weds",b)
+elif "e" in m:
+    print(a,"and",b,"are enemies")
+else:
+    print(a,"and",b,"are siblings")
